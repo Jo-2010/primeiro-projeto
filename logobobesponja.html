@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+           text-align: center;
+           align-items: center;
+           justify-content: center;
+           background-color: cyan;
+           overflow: hidden;
+        }
+     .centro{
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        background-color: darkblue;
+        box-shadow: inset 0 0 60px black, 0 0 0 10px black;
+        border-top: 30px solid orange;
+        border-bottom: 30px solid orange;
+        border-left: 30px solid blue;
+        border-right: 30px solid blue;
+        margin-top: 50px;
+    
+    }
+    .corda1{
+        width: 30px;
+        height: 50px;
+        border-radius: 10px;
+        transform: rotate(45deg);
+        z-index:2;
+        background: radial-gradient(orange, rgb(238, 186, 90));
+        background-position: 50% 50%;
+        border: 5px solid black;   
+        margin: 10px 0px 85px 135px; 
+        position: fixed;                                                                  
+    }
+    .corda2{
+        width: 30px;
+        height: 50px;
+        border-radius: 10px;
+        transform: rotate(135deg);
+        z-index:3;
+        background: radial-gradient(orange, rgb(238, 186, 90));
+        background-position: 50% 50%;
+        border: 5px solid black;   
+        margin: 10px 125px 85px 0px; 
+        position: fixed;
+    }
+    .corda3{
+        width: 30px;
+        height: 50px;
+        border-radius: 10px;
+        transform: rotate(225deg);
+        z-index:4;
+        background: radial-gradient(orange, rgb(238, 186, 90));
+        background-position: 50% 50%;
+        border: 5px solid black;   
+        margin: 290px 110px 85px 0px; 
+        position: fixed;
+    }.corda4{
+        width: 30px;
+        height: 50px;
+        border-radius: 10px;
+        transform: rotate(315deg);
+        z-index:5;
+        background: radial-gradient(orange, rgb(238, 186, 90));
+        background-position: 50% 50%;
+        border: 5px solid black;   
+        margin: 200px 10px 15px 145px; 
+        position: fixed;
+    }
+    </style>
+</head>
+<body>
+    <div class="centro" id="centro"></div>
+    <div class="corda1"></div>
+    <div class="corda2"></div>
+    <div class="corda3"></div>
+    <div class="corda4"></div>
+</body>
+</html>
